@@ -135,7 +135,7 @@ class VirtualMachine:
                 if self.registers[A] == self.registers[B]:
                     self.pc += C
                 else:
-                    pc += 1
+                    self.pc += 1
             case "sleepi":
                 time.sleep(A)
                 self.pc += 1

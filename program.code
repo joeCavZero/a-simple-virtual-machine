@@ -1,8 +1,11 @@
 loadi $a 50
 loadi $b 10
+loadi $c 300
 loop:
 sleepi 1
 add $a $a $b
 print $a
+jeq $a $c end
 jeq $a $a loop
+end:
 halt
